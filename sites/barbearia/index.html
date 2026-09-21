@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fio &amp; Navalha — Barbearia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="demo-banner">Site de demonstração — projeto de portfólio · <a href="../../index.html">← voltar ao portfólio</a></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">FIO <span>&amp;</span> NAVALHA</div>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#pedido">Fazer pedido</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="nav-cta" href="#pedido">Marcar horário</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="pole"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Barbearia clássica desde 2014</p>
+    <h1>Tradição no corte.<br>Precisão na navalha.</h1>
+    <p class="lead">Ambiente clássico, atendimento marcado e acabamento no capricho. Faça seu pedido abaixo e receba a confirmação direto no WhatsApp.</p>
+    <div class="hero-actions">
+      <a href="#pedido" class="btn btn-primary">Fazer pedido de teste</a>
+      <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+    </div>
+  </div>
+</section>
+
+<section class="servicos" id="servicos">
+  <p class="section-eyebrow">Serviços</p>
+  <h2 class="section-title">O que fazemos por aqui</h2>
+  <div class="serv-grid">
+    <div class="serv-card">
+      <span class="serv-icon">✂️</span>
+      <h3>Corte clássico</h3>
+      <p>Tesoura e máquina, com acabamento na navalha.</p>
+      <span class="serv-price">R$ 45</span>
+    </div>
+    <div class="serv-card">
+      <span class="serv-icon">🪒</span>
+      <h3>Barba desenhada</h3>
+      <p>Modelagem completa com toalha quente.</p>
+      <span class="serv-price">R$ 35</span>
+    </div>
+    <div class="serv-card">
+      <span class="serv-icon">💈</span>
+      <h3>Combo corte + barba</h3>
+      <p>O pacote completo, do topo ao queixo.</p>
+      <span class="serv-price">R$ 70</span>
+    </div>
+    <div class="serv-card">
+      <span class="serv-icon">🧴</span>
+      <h3>Sobrancelha &amp; acabamento</h3>
+      <p>Detalhes finais para um visual impecável.</p>
+      <span class="serv-price">R$ 20</span>
+    </div>
+  </div>
+</section>
+
+<section class="pedido" id="pedido">
+  <div class="pedido-box">
+    <div class="pedido-info">
+      <p class="section-eyebrow">Pedido de demonstração</p>
+      <h2 class="section-title">Simule um agendamento</h2>
+      <p class="section-lead">Preencha os dados abaixo. Ao confirmar, abrimos o WhatsApp com seu pedido, valor e tempo estimado já prontos — só clicar em enviar. <em>(Este é um exemplo de fluxo criado para o portfólio.)</em></p>
+    </div>
+    <form class="order-form" id="orderForm">
+      <label>Nome do cliente
+        <input type="text" id="clienteNome" placeholder="Ex: João Pereira" required>
+      </label>
+      <label>Serviço
+        <select id="clienteServico" required>
+          <option value="">Selecione um serviço</option>
+          <option value="Corte clássico" data-preco="45">Corte clássico — R$ 45</option>
+          <option value="Barba desenhada" data-preco="35">Barba desenhada — R$ 35</option>
+          <option value="Combo corte + barba" data-preco="70">Combo corte + barba — R$ 70</option>
+          <option value="Sobrancelha e acabamento" data-preco="20">Sobrancelha e acabamento — R$ 20</option>
+        </select>
+      </label>
+      <label>Horário desejado
+        <input type="time" id="clienteHorario" required>
+      </label>
+      <label>Observações (opcional)
+        <textarea id="clienteObs" rows="3" placeholder="Alguma preferência de estilo?"></textarea>
+      </label>
+      <div class="order-summary" id="orderSummary">
+        <span>Valor</span>
+        <strong id="orderPreco">R$ 0</strong>
+        <span>Tempo estimado</span>
+        <strong>60 minutos</strong>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Finalizar pedido no WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="galeria" id="galeria">
+  <p class="section-eyebrow">Galeria</p>
+  <h2 class="section-title">Um pouco do nosso trabalho</h2>
+  <div class="gal-grid">
+    <div class="gal-card g1"></div>
+    <div class="gal-card g2"></div>
+    <div class="gal-card g3"></div>
+    <div class="gal-card g4"></div>
+  </div>
+</section>
+
+<footer class="footer" id="contato">
+  <div>
+    <strong>FIO &amp; NAVALHA</strong>
+    <p>Rua das Tesouras, 123 — Centro</p>
+  </div>
+  <a href="https://wa.me/5562994683562?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" class="btn btn-whatsapp">Chamar no WhatsApp</a>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
